@@ -13,8 +13,8 @@ Steps followed:
 $ kubectl get nodes --show-labels
 
 2. Chose one of your nodes, and add a label to it:
-$ kubectl label nodes ip-172-31-45-169 disktype=ssd
-$ kubectl label nodes ip-172-31-45-169 site=india
+$ kubectl label nodes <Node Name> disktype=ssd
+$ kubectl label nodes <Node Name> site=india
 
 3. Apply the manifest to create a Pod that is scheduled onto your chosen node
 $ kubectl apply -f Node_affinity.yaml
